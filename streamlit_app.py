@@ -8,4 +8,4 @@ slt.text("🥣  Idly, Vadai & Sambar")
 slt.text("🥗 Bread Omlette")
 slt.text("🐔 🥑🍞 Sausage, Bacon, Eggs, Hashbrown and Toast")
 
-streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
+slt.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
