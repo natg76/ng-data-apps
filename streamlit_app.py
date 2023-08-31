@@ -16,7 +16,10 @@ my_fruit_list = my_fruit_list.set_index('Fruit')
 
 
 # Let's put a pick list here so they can pick the fruit they want to include 
-slt.multiselect("Pick some fruits:", list(my_fruit_list.index))
+fruits_selected = slt.multiselect("Pick some fruits:", list(my_fruit_list.index), ['Avacado', 'Strawberries'])
+fruits_to_show = my_fruit_list.loc[fruits_selected]
+
 
 # Display the table on the page.
-slt.dataframe(my_fruit_list)
+slt.dataframe(fruits_to_show)
+
