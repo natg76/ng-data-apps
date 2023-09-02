@@ -37,3 +37,5 @@ fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
 # write your own comment - what does this do?
 slt.dataframe(fruityvice_normalized)
 
+
+import snowflake.connector
