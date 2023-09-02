@@ -25,8 +25,11 @@ slt.dataframe(fruits_to_show)
 
 slt.header("Fruityvice Fruit Advice!")
 
+fruit_choice = slt.text_input('What fruit would you like information about?','Kiwi')
+slt.write('The user entered ', fruit_choice)
+
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 slt.text(fruityvice_response.json())
 
 # Normalize the JSON data into a data frame 
