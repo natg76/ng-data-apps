@@ -25,4 +25,4 @@ slt.dataframe(fruits_to_show)
 
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-streamlit.text(fruityvice_response)
+slt.text(fruityvice_response)
