@@ -1,5 +1,6 @@
 import streamlit as slt
 import pandas as pd
+import snowflake.connector
 
 slt.title("Adhi's Cafe - New Healthy Diner")
 
@@ -38,7 +39,7 @@ fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
 slt.dataframe(fruityvice_normalized)
 
 
-import snowflake.connector
+
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
@@ -46,3 +47,5 @@ my_cur.execute("SELECT * from fruit_Load_list")
 my_data_row = my_cur.fetchone()
 slt.text("Fruit_load_list contains:")
 slt.text(my_data_row)
+
+
