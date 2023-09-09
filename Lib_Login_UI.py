@@ -15,5 +15,44 @@ with st.sidebar:
     selected = option_menu('MS LIMS', ['Login', 'Manage Account','Transact Books', 'View Books', 'Logout'], 
         icons=['unlock','info-circle', 'play-btn','search','lock'],menu_icon='intersect', default_index=0)
 
-st.text("User ID / Email")
-st.text("Password")
+
+if selected=="Intro":
+    #Header
+    st.title('Welcome to CV MS LIMS')
+    st.subheader('*Please login to the system as as Admin or a User*')
+    st.text("User ID / Email")
+    st.text("Password")
+    st.divider()
+
+
+#Manage Account Page
+if selected=="Manage Account":
+    st.subheader('Account Management Actions')
+    st.text("Create user account");
+    st.text("Modify user account");
+    st.text("Delete user account");
+    st.divider()
+
+#Search Page
+if selected=="Transact Books":
+    st.subheader('Please chooise option to either borrow or return books')
+    st.text("Borrow Books");
+    st.text("Return Books");
+    st.text("Pay Penalty");
+    st.divider()
+    
+#Search Page
+if selected=="View Books":
+    st.subheader('Search or View Books in Catalog & Check availability')
+    st.text("Search Catalog");
+    st.text("View Recent Books");
+    st.text("Popular Titles");
+    st.text("Popular Authors");
+    st.text("Popular Genre");
+    st.divider()
+
+#Logout Page
+if selected=="Logout":
+    st.subheader('Thank you for visiting CV MS LIMS')
+    st.text("Please close browsers for safety");
+    st.divider()
