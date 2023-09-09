@@ -1,2 +1,4 @@
 #requirements.txt
 snowflake-connector-python
+streamlit_lottie==0.0.3
+streamlit_option_menu==0.3.2
