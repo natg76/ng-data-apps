@@ -36,19 +36,19 @@ if selected=="Manage Account":
 #Search Page
 if selected=="Transact Books":
     st.subheader('Please chooise option to either borrow or return books')
-    st.text("Borrow Books");
-    st.text("Return Books");
-    st.text("Pay Penalty");
+    st.button("Borrow Books");
+    st.button("Return Books");
+    st.button("Pay Penalty");
     st.divider()
     
 #Search Page
 if selected=="View Books":
     st.subheader('Search or View Books in Catalog & Check availability')
-    st.text("Search Catalog");
-    st.text("View Recent Books");
-    st.text("Popular Titles");
-    st.text("Popular Authors");
-    st.text("Popular Genre");
+    st.button("Search Catalog");
+    st.button("View Recent Books");
+    st.button("Popular Titles");
+    st.button("Popular Authors");
+    st.button("Popular Genre");
     st.divider()
 
 #Logout Page
