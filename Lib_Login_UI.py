@@ -13,7 +13,7 @@ st.header("Welcome to the CV's MS Library")
 
 with st.sidebar:
     selected = option_menu('MS LIMS', ['Login', 'Manage Account','Transact Books', 'View Books', 'Logout'], 
-        icons=['unlock','eyes', 'play-btn','search','info-circle'],menu_icon='intersect', default_index=0)
+        icons=['unlock',':eyes:', 'play-btn','search','info-circle'],menu_icon='intersect', default_index=0)
 
 st.text("User ID / Email")
 st.text("Password")
