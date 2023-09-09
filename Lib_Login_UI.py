@@ -10,12 +10,9 @@ st.set_page_config(
 
 st.header("Welcome to the CV's MS Library")
 
-
-st.sidebar.text("Login")
-st.sidebar.text("Account Management")
-st.sidebar.text("Transact Books")
-st.sidebar.text("View Books")
-st.sidebar.text("Logout")
+with st.sidebar:
+    selected = option_menu('MS LIMS', ["Login", 'Manage Account','Transact Books', 'View Books', 'Logout'], 
+        icons=['unlock','search','info-circle'],menu_icon='intersect', default_index=0)
 
 st.text("User ID / Email")
 st.text("Password")
