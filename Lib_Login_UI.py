@@ -16,7 +16,7 @@ with st.sidebar:
         icons=['unlock','info-circle', 'play-btn','search','lock'],menu_icon='intersect', default_index=0)
 
 
-if selected=="Intro":
+if selected=="Login":
     #Header
     st.title('Welcome to CV MS LIMS')
     st.subheader('*Please login to the system as as Admin or a User*')
@@ -28,9 +28,9 @@ if selected=="Intro":
 #Manage Account Page
 if selected=="Manage Account":
     st.subheader('Account Management Actions')
-    st.text("Create user account");
-    st.text("Modify user account");
-    st.text("Delete user account");
+    st.button("Create user account");
+    st.button("Modify user account");
+    st.button("Delete user account");
     st.divider()
 
 #Search Page
