@@ -1,7 +1,7 @@
 import streamlit as st
 import snowflake.connector
 
-slt.title("CV LIMS - Library Information Management Systems")
+st.title("CV LIMS - Library Information Management Systems")
 
 st.sidebar.text("Login")
 st.sidebar.text("Account Management")
