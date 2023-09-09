@@ -1,7 +1,13 @@
 import streamlit as st
 import snowflake.connector
 
-st.title("CV LIMS - Library Information Management Systems")
+#Layout
+st.set_page_config(
+    page_title="CV LIMS - Library Information Management Systems",
+    layout="wide",
+    initial_sidebar_state="expanded")
+
+
 st.header("Welcome to the CV's MS Library")
 
 
